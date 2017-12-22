@@ -3,3 +3,5 @@
   tasks:
   - name: get uptime
     command: uptime
+    register: uptime
+  - debug: var=uptime.stdout_lines
